@@ -13,11 +13,14 @@ function sayHello() {
   - Alert `fullName`
 */
 function fullName(){
-  let firstName = prompt(`Enter your first name`);
-  let lastName = prompt(`Enter your last name`);
-  let fullName = `${firstName} + ${lastName}`;
-  alert(fullName);
+ let firstName = prompt(`Enter your first name`);
+ let lastName = prompt(`Enter the lastName `);
+ const fullName =  (`${firstName}  ${lastName}`);
+ alert(fullName);
+
 }
+
+
 /*
 3. Create a function named `addTwoNumbers` with the following steps:
 
@@ -71,8 +74,10 @@ function getTable(){
 function isLeapYear(){
   let year = +prompt(`Enter the year`);
   if (year % 400 === 0){
-    alert(`${year} is not a  leap year`);
+    alert(`${year} is a leap year`);
   } else if (year % 100 === 0){
+    alert(`${year} is not a leap year`);
+  }else if (year % 4 ===0){
     alert(`${year} is a leap year`);
   }else{
     alert(`${year} is not a leap year`);
