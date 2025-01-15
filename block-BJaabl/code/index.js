@@ -1,6 +1,10 @@
 /*
 1. Create a function named `sayHello` that that accepts a parameter `name` and alert `Hello [name]!`.
 */
+function sayHello(name){
+  alert(`Hello ${name}`);
+}
+
 
 /*
 2. Create a function named `getFullName` that accepts two parameter `firstName` and `lastName` and returns
@@ -10,6 +14,12 @@ Example:
   getFullName("John", "Snow"); // "John Snow"
   getFullName("Nelson", "Mandela"); // "Nelson Mandela"
 */
+function getFullName(firstName, lastName){
+  let fullName = `${firstName} ${lastName}`;
+  return fullName;
+}
+console.log(getFullName("John", "Snow"));
+console.log(getFullName("Nelson", "Mandela"));
 
 /*
 3. Create a function named `addTwoNumbers` that accepts two numbers i.e `firstNum` and `secondNum` and returns
@@ -20,7 +30,9 @@ addTwoNumbers(10, 22); // 32
 addTwoNumbers(20, 32); // 32
 addTwoNumbers(10, "100"); // Alert Enter Valid Input
 */
-
+function addTwoNumbers(firstNun, secondNum){
+  
+}
 /*
 4. Create a function named `calc` which accepts three parameter `numA`, `numB` and `operation`. Operation
 can only be one of these `add, sub, mul, div`. Based on the operator return the value. If the `numA` or `numB`
