@@ -6,6 +6,7 @@ function sayHello(name){
 }
 
 
+
 /*
 2. Create a function named `getFullName` that accepts two parameter `firstName` and `lastName` and returns
 fullName.
@@ -18,6 +19,7 @@ function getFullName(firstName, lastName) {
   let fullName = `${firstName} ${lastName}`;
   return fullName;
 }
+
 
 /*
 3. Create a function named `addTwoNumbers` that accepts two numbers i.e `firstNum` and `secondNum` and returns
@@ -38,6 +40,9 @@ function addTwoNumbers(firstNum, secondNum) {
     return firstNum + secondNum;
   }
 }
+
+
+
 
 /*
 4. Create a function named `calc` which accepts three parameter `numA`, `numB` and `operation`. Operation
@@ -81,6 +86,18 @@ function isLeapYear(year){
   if(year % 100 ===0) return false;
   return year % 4 ===0;
 }
+
+
+function isLeapYear(year){
+
+  if(year % 400 ===0) return true;
+  if(year % 100 ===0) return false;
+  return year %  4 ===0;
+  
+}
+
+
+
 
 /*
 6. Create a function named `getFactorial` that accepts a number and return the factorial of the number.
