@@ -8,9 +8,16 @@
   * [ ] Add an additional argument to the function that takes the conversion rate of human to dog years.
 */
 
-function calculateDogAge() {
-  // Your code goes here
+function calculateDogAge(age, conversionRate = 7) {
+  // Calculate dog age by multiplying human age with the conversion rate
+  let dogYear = age * conversionRate;
+  return dogYear;
 }
+
+// Example usage:
+console.log(calculateDogAge(2));  // Using default conversion rate of 7
+console.log(calculateDogAge(2, 6));  // Using custom conversion rate of 6
+
 
 /*
 2. 🎖Write a function named calculateMoviesToWatch that:
@@ -19,9 +26,37 @@ function calculateDogAge() {
   * [ ] Return the total number of movie you will watch.
 */
 
-function calculateMoviesToWatch() {
-  // Your code goes here
+function calculateMoviesToWatch(age, movies = 4) {
+  let maxAge = 100;
+  if(age >= 20){
+    return age * movies;
+  }
 }
+
+function calculateMoviesToWatch(age, moviesPerWeek) {
+  const maxAge = 100;
+  
+  // Check if the person is at least 20 years old
+  if (age < 20) {
+    return "Age must be 20 or older to calculate.";
+  }
+  
+  // Calculate remaining years to live
+  const remainingYears = maxAge - age;
+  
+  // Calculate the total number of movies watched per year (52 weeks per year)
+  const moviesPerYear = moviesPerWeek * 4 * 12;  // 4 weeks/month * 12 months/year
+  
+  // Calculate the total movies watched for the remaining years of life
+  const totalMovies = remainingYears * moviesPerYear;
+  
+  return totalMovies;
+}
+
+// Example usage:
+console.log(calculateMoviesToWatch(25, 3));  // For a 25-year-old watching 3 movies per week
+console.log(calculateMoviesToWatch(18, 5));  // Returns a message since the person is under 20
+
 
 /*
 3. 🎖Create a function called celsiusToFahrenheit:
@@ -31,6 +66,8 @@ function calculateMoviesToWatch() {
 
 function celsiusToFahrenheit() {
   // Your code goes here
+  let fahrenheit =  (celsius * 9 / 5) + 32
+  return `${temp}F is ${fahrenheit}C`
 }
 
 /*
@@ -39,8 +76,10 @@ function celsiusToFahrenheit() {
   * [ ] Convert it to celsius and return "NN°F is NN°C"
 */
 
-function celsiusToFahrenheit() {
+function celsiusToFahrenheit(temp) {
   // Your code goes here
+  let celsius (temp - 32) * 5 / 9;
+  return `${temp}F is ${celsius}C`;
 }
 
 /*
@@ -66,8 +105,18 @@ pow(-31, 2); // "The number below 1 is not allowed"
 and return sum or product of 1,…,n. If user enters any other value than `sum` or `product` alert `Not a valid Input`.
 */
 
-function sumOrProductOfN() {
+function sumOrProductOfN(num, opeartion) {
   // Your code goes here
+  if(opeartion == "sum"){
+   for (let i =1;i<=num;i++){
+    sum +=1;
+   }
+   return sum;
+  }else if(opeartion ==="product")
+    let product =1;
+    for(let i=1; i <=num;i++_){
+      product *= 1;
+    }
 }
 
 sumOrProductOfN(4, 'sum'); // 10
