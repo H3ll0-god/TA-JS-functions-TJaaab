@@ -4,6 +4,9 @@
 function sayHello() {
   alert("HelloWorld!")
 };
+
+
+
 /*
 2. Create a function named `fullName` with the following steps:
 
@@ -17,9 +20,14 @@ function fullName(){
  let lastName = prompt(`Enter the lastName `);
  const fullName =  (`${firstName}  ${lastName}`);
  alert(fullName);
-
 }
-
+/*
+function fullName(){
+let firstName = prompt(`Enter your first name`);
+let lastName = prompt(`Enter the last name`);
+const fullName = (`${firstName} ${lastname}`);
+alert(fullName);
+}
 
 /*
 3. Create a function named `addTwoNumbers` with the following steps:
@@ -36,6 +44,13 @@ function addTwoNumbers(){
   alert(sum);
 }
 
+function addTwoNumbers(){
+  let firstNum = +(prompt(`Enter the first name`));
+  let secondNum = +(prompt(`Enter the second number`));
+  let sum = firstNum + secondNum;
+  alert(sum);
+
+}
 /*
 4. Create a function named `getTable` with the following steps:
 
@@ -60,8 +75,12 @@ function getTable(){
  console.log(`${num} * ${i} = ${num * i}`);
 }
 }
-
-
+function getTable(){
+  let num = +prompt(`Enter a number`);
+for(i=0;i<=10;i++){
+console.log(`${num} * {i} = ${num * i}`)};
+}
+}
 
 
 /*
