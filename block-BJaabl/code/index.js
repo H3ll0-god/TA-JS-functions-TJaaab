@@ -5,7 +5,9 @@ function sayHello(name){
   alert(`Hello ${name}`);
 }
 
-
+function sayHello(name){
+  alert (`Hello ${name}`);
+}
 
 /*
 2. Create a function named `getFullName` that accepts two parameter `firstName` and `lastName` and returns
@@ -20,7 +22,10 @@ function getFullName(firstName, lastName) {
   return fullName;
 }
 
-
+function getFullName(firstName,lastName){
+  let fullName =` ${firstName}  {lastName}`;
+  return fullName;
+}
 /*
 3. Create a function named `addTwoNumbers` that accepts two numbers i.e `firstNum` and `secondNum` and returns
 the sum of both numbers. If user passes any data other then numbers alert a message saying `Enter Valid Input`
@@ -40,8 +45,6 @@ function addTwoNumbers(firstNum, secondNum) {
     return firstNum + secondNum;
   }
 }
-
-
 
 
 /*
