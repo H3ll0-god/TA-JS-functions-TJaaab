@@ -8,6 +8,14 @@
   * [ ] Add an additional argument to the function that takes the conversion rate of human to dog years.
 */
 
+
+function calculateDogAge(age,conversionRate = 7){
+  let dogYear = age * conversionRate;
+  return dogYear;
+}
+
+
+
 function calculateDogAge(age, conversionRate = 7) {
   // Calculate dog age by multiplying human age with the conversion rate
   let dogYear = age * conversionRate;
@@ -25,6 +33,14 @@ console.log(calculateDogAge(2, 6));  // Using custom conversion rate of 6
   * [ ] calculates the number of movies for rest of the life (based on a constant max age).
   * [ ] Return the total number of movie you will watch.
 */
+
+function calculateMoviesToWatch(age,movies = 4){
+let maxAge = 70;
+if(age >= 20){
+  return age * movies;
+}
+}
+
 
 function calculateMoviesToWatch(age, movies = 4) {
   let maxAge = 100;
