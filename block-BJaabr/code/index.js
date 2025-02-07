@@ -9,6 +9,17 @@ Do the following for the given problem:
 
 
 
+function convertToString(n){
+  return String(n);
+}
+
+
+
+
+
+
+
+
 function convertToString(n) {
   return String(n);
 }
@@ -18,6 +29,20 @@ function convertToString(n) {
 
 
 // - Write a Function Expression
+
+const convertToString = function(n){
+  return String(n);
+}
+
+
+
+
+
+
+
+
+
+
 let convertToString = function (n) {
   return String(n);
 }
@@ -36,6 +61,22 @@ const convertToString = function (n) {
 
 
 // - Write an Arrow Function without curly brackets (if possible)
+
+
+
+
+
+
+const convertToString = (n) => String(n);
+
+
+
+
+
+
+
+
+
 let convertToString = (n) => String(n);
 
 
@@ -43,6 +84,17 @@ let convertToString = (n) => String(n);
 let convertToString =  (n) => String(n);
 
 // - Write an Arrow Function with curly brackets
+
+
+let convertToString = (n){
+  String(n);
+};
+
+
+
+
+
+
 let convertToString = (n) => {
   return String(n);
 };
@@ -57,18 +109,55 @@ Write a function named `addOne` that accepts a number, adds one to the given val
 Do the following with above problem.
 */
 // - Write a Function Declaration
+
+function addOne(n){
+  return n + 1;
+}
+
+
+
+
+
+
+
  function addOne(n){
   return n + 1;
  }
 // - Write a Function Expression
+
+
+let addOne = function(n){
+  return n + 1;
+}
+
+
+
+
 let addOne = function(){
   return n + 1;
 };
 // - Write an Arrow Function without curly brackets(if possible)
+
+
+let addOne =(n) => return n + 1;
+
+
+
+
+
+
+
 let addOne = (n) =>{
  n + 1
 }
 // - Write an Arrow Function with curly brackets
+
+
+
+
+
+
+
 let addOne = (n) => Number(n)
 // - Execute the function
 console.log(addOne)
@@ -81,17 +170,46 @@ Write a function named `substractOne` that accepts a number, substracts one from
 Do the following with above problem.
 */
 // - Write a Function Declaration
+
+
+
+
+function substractOne(n){
+  return n - 1;
+}
+
+
+
+
+
+
+
+
+
+
 function substractOne(num) {
  return num - 1;
 }
 // - Write a Function Expression
+
+
+let substractOne = function(n){
+  return n -1;
+}
+
+
+
 let substractOne = function(num){
 return num -1;
 }
 // - Write an Arrow Function without curly brackets(if possible)
-substractOne = (num) => {
-  n-1
-}
+
+
+
+
+
+
+
 // - Write an Arrow Function with curly brackets
 substractOne = (num) => Number(num)
 // - Execute the function
@@ -108,6 +226,21 @@ Do the following with above problem.
 */
 
 // - Write a Function Declaration
+
+
+function sum(){
+  let num1 = +prompt("Enter the number ");
+  let num2 = +prompt("Enter the second number ");
+  sum = num1 + num2;
+  return sum;
+}
+
+
+
+
+
+
+
 function(sum)() {
   let num1 = +prompt("enter the first number");
   let num2 = +prompt("enter the second number");
@@ -117,6 +250,15 @@ function(sum)() {
 
 // - Write a Function Expression
 
+const addNumbers = function(){
+  let num1 = +prompt("Enter the number ");
+  let num2 = +prompt("Enter the second number ");
+  sum = num1 + num2;
+  return sum;
+}
+
+
+
 const addNumbers = function() {
   let num1 = +prompt("enter the first number");
   let num2 = +prompt("enter the second number");
@@ -125,6 +267,13 @@ const addNumbers = function() {
 
 }
 // - Write an Arrow Function without curly brackets(if possible)
+
+
+
+ addNumbers = (num1,num2) => num1 + num2
+
+
+
 
 addNumbers  = (num1, num2) => num1 + num2
 
@@ -194,7 +343,7 @@ const biggerFunction = function(x,y){
   }
 }
 // - Write an Arrow Function without curly brackets(if possible)
-const biggerWithoutcurly = (x,y) => x > y ; 
+const biggerWithoutcurly = (x,y) => x > y ? `true` : `false`;
 
 // - Write an Arrow Function with curly brackets
 const biggerwithcurly = (x,y) => {
